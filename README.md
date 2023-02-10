@@ -33,6 +33,10 @@ _Test: "It should return an array of numbers from 0 to the user's inputted numbe
 _Code: robogerLogic(5);_
 _Expected Output: [0, 1, 2, 3, 4, 5]_
 
+_Test: "When it encounters the number 1 it should replace with "Beep!"_
+_Code: robogerLogic(1);_
+_Expected Output: 0, "Beep!"_
+
 ## License
 
 _If there are any isues you find, please contact me via email: skipmarcel@gmail.com_

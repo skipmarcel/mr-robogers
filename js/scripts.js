@@ -1,4 +1,8 @@
-function robogerLogic(numInput) {
-  let numArray = numInput.split("");
-  console.log(numArray);
+function robogerLogic(number) {
+  let array = [];
+  for (let i = 0; i <= number; i++) {
+    array.push(i);
+  }
+
+  console.log(array);
 }
