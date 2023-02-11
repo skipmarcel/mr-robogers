@@ -5,24 +5,35 @@ function robogerLogic(number) {
   }
 
   const indexOfOne = array.filter((number) => String(number).includes("1"));
+  const indexOfTwo = array.filter((number) => String(number).includes("2"));
+  const indexOfThree = array.filter((number) => String(number).includes("3"));
+
   for (let i = 0; i < array.length; i++) {
-    if (indexOfOne.includes(array[i])) {
-      array[i] = "Beep!";
+    if (indexOfThree.includes(array[i])) {
+      array[i] = "Won't you be my neighbor?";
     }
   }
 
-  const indexOfTwo = array.filter((number) => String(number).includes("2"));
   for (let i = 0; i < array.length; i++) {
     if (indexOfTwo.includes(array[i])) {
       array[i] = "Boop!";
     }
   }
 
-  const indexOfThree = array.filter((number) => String(number).includes("3"));
   for (let i = 0; i < array.length; i++) {
-    if (indexOfThree.includes(array[i])) {
-      array[i] = "Won't you be my neighbor?";
+    if (indexOfOne.includes(array[i])) {
+      array[i] = "Beep!";
     }
   }
-  console.log(array);
+  return array;
+}
+
+// UI Logic
+
+function submitFunction() {
+  var inputValue = document.getElementById("inputField").value;
+  console.log(inputValue);
+  var result = robogerLogic(inputValue);
+  document.getElementById("roboWordsOutput").innerHTML = result.join(", ");
+  event.preventDefault();
 }

@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Roboger's Scrambler</title>
 
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <script src="js/scripts.js"></script>
+    <div id="main-container">
+      <h1>Mr. Roboger's Logic</h1>
+      <form id="roboGarble">
+        <div id="form-contaner">
+          <h3>Input a number for Roboger to Garble</h3>
+          <input type="text" id="inputField" />
+          <br />
+          <input type="submit" value="submit" onclick="submitFunction()" />
+        </div>
+      </form>
+      <p id="roboWordsOutput"></p>
+    </div>
   </body>
 </html>
