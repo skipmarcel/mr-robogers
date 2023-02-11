@@ -32,8 +32,8 @@ function robogerLogic(number) {
 
 function submitFunction() {
   var inputValue = document.getElementById("inputField").value;
-  console.log(inputValue);
   var result = robogerLogic(inputValue);
   document.getElementById("roboWordsOutput").innerHTML = result.join(", ");
   event.preventDefault();
+  document.getElementById("roboGarble").reset();
 }
