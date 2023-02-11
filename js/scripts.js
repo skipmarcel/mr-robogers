@@ -3,11 +3,11 @@ function robogerLogic(number) {
   for (let i = 0; i <= number; i++) {
     array.push(i);
   }
-  let searchNumberOne = 1;
-  let indexOfOne = array.indexOf(searchNumberOne);
-  for (i = 0; i < array.length; i++) {
-    if (indexOfOne !== -1) {
-      array[searchNumberOne] = "Beep!";
+
+  const indexOfOne = array.filter((number) => String(number).includes("1"));
+  for (let i = 0; i < array.length; i++) {
+    if (indexOfOne.includes(array[i])) {
+      array[i] = "Beep!";
     }
   }
   console.log(array);
