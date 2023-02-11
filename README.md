@@ -33,9 +33,13 @@ _Test: "It should return an array of numbers from 0 to the user's inputted numbe
 _Code: robogerLogic(5);_
 _Expected Output: [0, 1, 2, 3, 4, 5]_
 
-_Test: "When it encounters the number 1 it should replace with "Beep!"_
+_Test: "When it encounters the number 1 it should be replaced with "Beep!"_
+_Code: robogerLogic(5);_
+_Expected Output: [0, "Beep!", 2, 3, 4, 5]_
+
+_Test: "When it encounters the number 2 it should be replaced with "Boop!"_
 _Code: robogerLogic(10);_
-_Expected Output: {0, "Beep!", 3, 4, 5]_
+_Expected Output: [0, 'Beep!', 'Boop!', "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 'Beep!']_
 
 ## License
 
