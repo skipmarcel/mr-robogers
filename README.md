@@ -34,8 +34,8 @@ _Code: robogerLogic(5);_
 _Expected Output: [0, 1, 2, 3, 4, 5]_
 
 _Test: "When it encounters the number 1 it should replace with "Beep!"_
-_Code: robogerLogic(1);_
-_Expected Output: 0, "Beep!"_
+_Code: robogerLogic(10);_
+_Expected Output: {0, "Beep!", 3, 4, 5]_
 
 ## License
 
