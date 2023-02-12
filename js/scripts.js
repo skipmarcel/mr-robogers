@@ -1,3 +1,5 @@
+//business logic
+
 function robogerLogic(number) {
   let array = [];
   for (let i = 0; i <= number; i++) {
@@ -33,6 +35,14 @@ function robogerLogic(number) {
 function submitFunction() {
   var inputValue = document.getElementById("inputField").value;
   var result = robogerLogic(inputValue);
+  const oldP = document.getElementById("roboWordsOutput");
+  if (oldP) {
+    oldP.remove();
+  }
+  const newP = document.createElement("p");
+  newP.setAttribute("id", "roboWordsOutput");
+  const divInput = document.getElementById("textTyping");
+  divInput.appendChild(newP);
   document.getElementById("roboWordsOutput").innerHTML = result.join(", ");
   event.preventDefault();
   document.getElementById("roboGarble").reset();

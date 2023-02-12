@@ -1,0 +1,42 @@
+body {
+  background-color: rgba(10, 89, 49, 0.4);
+  text-align: center;
+  font-family: "Fredoka One";
+}
+
+input[type="text"] {
+  border-radius: 6px;
+  padding: 5px 15px;
+}
+
+#textTyping {
+  height: 100px;
+  padding: 50px 30px;
+  background: #f5f5f5;
+  font-size: 18px;
+  font-family: monospace;
+  border-radius: 50px;
+}
+#roboWordsOutput {
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(22, end) forwards, blink 1s infinite;
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    border-right: 2px solid transparent;
+  }
+  50% {
+    border-right: 2px solid #222;
+  }
+}
