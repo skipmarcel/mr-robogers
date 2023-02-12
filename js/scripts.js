@@ -43,7 +43,7 @@ function submitFunction() {
   newP.setAttribute("id", "roboWordsOutput");
   const divInput = document.getElementById("textTyping");
   divInput.appendChild(newP);
-  document.getElementById("roboWordsOutput").innerHTML = result.join(", ");
+  document.getElementById("roboWordsOutput").innerHTML = result.join(" ");
   event.preventDefault();
   document.getElementById("roboGarble").reset();
 }
